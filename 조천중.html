@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>조천중학교 2학년 학생코드</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f4f9;
+      display: flex;
+      justify-content: center;
+      padding: 24px 16px;
+      color: #1f1f1f;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 24px 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #e8f0fe;
+      color: #1a73e8;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .description {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      border: 1px solid #eef0f4;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+
+    .info-label {
+      color: #555;
+      font-weight: 600;
+    }
+
+    .info-value {
+      font-weight: 700;
+      color: #111;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      gap: 12px;
+    }
+
+    .count {
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .count span {
+      color: #1a73e8;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #e0e3e7;
+      border-radius: 10px;
+      font-size: 13px;
+      outline: none;
+      background-color: #fafbfc;
+    }
+
+    .search-input:focus {
+      border-color: #1a73e8;
+      background-color: #ffffff;
+    }
+
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .student-card {
+      background: #ffffff;
+      border: 1px solid #eef0f4;
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .student-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .student-no {
+      font-size: 14px;
+      font-weight: 800;
+      color: #888;
+      min-width: 20px;
+    }
+
+    .student-name {
+      font-size: 16px;
+      font-weight: 800;
+      color: #222;
+    }
+
+    .code-area {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .code-label {
+      font-size: 12px;
+      color: #777;
+    }
+
+    .code-value {
+      font-size: 15px;
+      font-weight: 800;
+      color: #1a73e8;
+      letter-spacing: 0.5px;
+    }
+
+    .copy-btn {
+      background: #f1f3f4;
+      border: none;
+      color: #3c4043;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: #e4e7eb;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .btn-pre {
+      background-color: #e8f0fe;
+      color: #1a73e8;
+    }
+
+    .btn-post {
+      background-color: #1a73e8;
+      color: #ffffff;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: rgba(33, 33, 33, 0.9);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 13px;
+      opacity: 0;
+      transition: all 0.3s ease;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="badge">조천중학교 2학년</div>
+    <h1 class="title">2026년 디지털새싹 핵심역량 진단 설문조사</h1>
+    <p class="description">자신의 이름을 확인하고 학생코드를 복사한 뒤 사전 또는 사후 설문 버튼을 눌러 이동하세요.</p>
+
+    <div class="info-list">
+      <div class="info-item">
+        <span class="info-label">유형</span>
+        <span class="info-value">방문형</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">프로그램명</span>
+        <span class="info-value">AI플레이그라운드:n8n에이전트메이커</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">운영기관명</span>
+        <span class="info-value">제주대학교 산학협력단</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">살고 있는 지역</span>
+        <span class="info-value">도서지역</span>
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <div class="count">총 <span id="studentCount">14</span>명</div>
+      <input type="text" id="searchInput" class="search-input" placeholder="번호 또는 이름 검색" oninput="filterStudents()" />
+    </div>
+
+    <div class="card-list" id="studentList"></div>
+  </div>
+
+  <div id="toast" class="toast">학생코드를 복사했습니다.</div>
+
+  <script>
+    const students = [
+      { no: 1, name: "고*성", code: "064234" },
+      { no: 2, name: "장*석", code: "129107" },
+      { no: 3, name: "강*지", code: "529955" },
+      { no: 4, name: "권*훈", code: "277070" },
+      { no: 5, name: "김*석", code: "539789" },
+      { no: 6, name: "강*미", code: "947268" },
+      { no: 7, name: "김*정", code: "582115" },
+      { no: 8, name: "김*우", code: "540997" },
+      { no: 9, name: "조*빈", code: "930728" },
+      { no: 10, name: "조*우", code: "503635" },
+      { no: 11, name: "정*우", code: "117350" },
+      { no: 12, name: "한*", code: "001424" },
+      { no: 13, name: "임*민", code: "653463" },
+      { no: 14, name: "김*경", code: "086046" }
+    ];
+
+    const PRE_SURVEY_URL = "https://form.kosac.re.kr/v/ItXeheqZl2ZyLuRUTRtI";
+    const POST_SURVEY_URL = "https://form.kosac.re.kr/v/zKytKcBQ7HdphktBfbHh";
+
+    function renderList(list) {
+      const container = document.getElementById("studentList");
+      container.innerHTML = "";
+
+      list.forEach(student => {
+        const card = document.createElement("div");
+        card.className = "student-card";
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="student-info">
+              <span class="student-no">${student.no}</span>
+              <span class="student-name">${student.name}</span>
+            </div>
+            <div class="code-area">
+              <span class="code-label">학생코드</span>
+              <span class="code-value">${student.code}</span>
+              <button class="copy-btn" onclick="copyCode('${student.code}')">복사</button>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="${PRE_SURVEY_URL}" class="btn btn-pre">사전설문</a>
+            <a href="${POST_SURVEY_URL}" class="btn btn-post">사후설문</a>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterStudents() {
+      const query = document.getElementById("searchInput").value.trim();
+      const filtered = students.filter(s => 
+        s.name.includes(query) || s.no.toString() === query || s.code.includes(query)
+      );
+      renderList(filtered);
+    }
+
+    function copyCode(code) {
+      navigator.clipboard.writeText(code).then(() => {
+        showToast();
+      }).catch(() => {
+        const textarea = document.createElement("textarea");
+        textarea.value = code;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        showToast();
+      });
+    }
+
+    function showToast() {
+      const toast = document.getElementById("toast");
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2000);
+    }
+
+    renderList(students);
+  </script>
+</body>
+</html>
