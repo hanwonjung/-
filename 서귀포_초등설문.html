@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디지털 새싹 사전, 사후 설문</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    body {
+      background-color: #f8fafc;
+      padding: 24px 16px;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+    .subtitle {
+      font-size: 0.95rem;
+      color: #475569;
+    }
+    .info-box {
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 24px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #1e40af;
+    }
+    .info-box strong {
+      color: #1d4ed8;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+    .student-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 6px;
+    }
+    .student-code {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 14px;
+    }
+    .btn-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .btn {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .btn-pre {
+      background-color: #e0f2fe;
+      color: #0369a1;
+    }
+    .btn-pre:hover {
+      background-color: #bae6fd;
+    }
+    .btn-post {
+      background-color: #f1f5f9;
+      color: #334155;
+    }
+    .btn-post:hover {
+      background-color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>디지털 새싹 사전, 사후 설문</h1>
+      <p class="subtitle">소속: 서귀포시청소년수련관</p>
+    </header>
+
+    <div class="info-box">
+      👉 본인의 <strong>사전 설문</strong> 또는 <strong>사후 설문</strong> 버튼을 클릭하면 <strong>학생코드를 복사</strong>하고 해당 설문조사 페이지를 새 탭으로 엽니다.<br>
+      설문지에 코드를 입력하는 칸에 <strong>붙여넣기(Ctrl + V 또는 꾹 눌러 붙여넣기)</strong>를 해주세요.
+    </div>
+
+    <div class="grid-container" id="studentGrid"></div>
+  </div>
+
+  <script>
+    // 학생 목록 데이터
+    const students = [
+      {
+            "no": 1,
+            "classInfo": "1학년 1반",
+            "name": "김*준",
+            "code": "742835"
+      },
+      {
+            "no": 2,
+            "classInfo": "2학년 1반",
+            "name": "고*린",
+            "code": "438082"
+      },
+      {
+            "no": 3,
+            "classInfo": "1학년 1반",
+            "name": "고*우",
+            "code": "887578"
+      },
+      {
+            "no": 4,
+            "classInfo": "1학년 1반",
+            "name": "이*은",
+            "code": "278551"
+      },
+      {
+            "no": 5,
+            "classInfo": "2학년 1반",
+            "name": "정*니",
+            "code": "457935"
+      },
+      {
+            "no": 6,
+            "classInfo": "1학년 1반",
+            "name": "김*별",
+            "code": "075124"
+      },
+      {
+            "no": 7,
+            "classInfo": "1학년 1반",
+            "name": "신*민",
+            "code": "955634"
+      },
+      {
+            "no": 8,
+            "classInfo": "2학년 1반",
+            "name": "공*린",
+            "code": "339941"
+      },
+      {
+            "no": 9,
+            "classInfo": "2학년 1반",
+            "name": "한*우",
+            "code": "086712"
+      },
+      {
+            "no": 10,
+            "classInfo": "1학년 1반",
+            "name": "한*리",
+            "code": "332175"
+      },
+      {
+            "no": 11,
+            "classInfo": "2학년 1반",
+            "name": "박*은",
+            "code": "416756"
+      },
+      {
+            "no": 12,
+            "classInfo": "1학년 1반",
+            "name": "강*훈",
+            "code": "626084"
+      },
+      {
+            "no": 13,
+            "classInfo": "3학년 1반",
+            "name": "김*우",
+            "code": "628528"
+      },
+      {
+            "no": 14,
+            "classInfo": "3학년 1반",
+            "name": "함*아",
+            "code": "985607"
+      },
+      {
+            "no": 15,
+            "classInfo": "1학년 1반",
+            "name": "양*우",
+            "code": "756516"
+      },
+      {
+            "no": 16,
+            "classInfo": "3학년 1반",
+            "name": "최*호",
+            "code": "977266"
+      },
+      {
+            "no": 17,
+            "classInfo": "1학년 1반",
+            "name": "최*우",
+            "code": "512394"
+      },
+      {
+            "no": 18,
+            "classInfo": "3학년 1반",
+            "name": "용*호",
+            "code": "857142"
+      },
+      {
+            "no": 19,
+            "classInfo": "1학년 1반",
+            "name": "용*혁",
+            "code": "884212"
+      }
+];
+
+    // 설문조사 URL
+    const PRE_SURVEY_URL = "https://form.kosac.re.kr/v/I0u6x1TYKMyKEDHYjrQj"; 
+    const POST_SURVEY_URL = "https://form.kosac.re.kr/v/lzdUndWx9ayKge3i3AIC";
+
+    function fallbackCopy(code) {
+      const tempInput = document.createElement("textarea");
+      tempInput.value = code;
+      tempInput.setAttribute("readonly", "");
+      tempInput.style.position = "fixed";
+      tempInput.style.opacity = "0";
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      tempInput.setSelectionRange(0, code.length);
+      let copied = false;
+      try { copied = document.execCommand("copy"); } catch (_) {}
+      tempInput.remove();
+      if (!copied) alert("자동 복사가 되지 않았습니다. 설문지에 학생코드 " + code + "를 직접 입력해 주세요.");
+    }
+
+    function copyCode(code) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(code).catch(() => fallbackCopy(code));
+      } else {
+        fallbackCopy(code);
+      }
+    }
+
+    const grid = document.getElementById("studentGrid");
+    students.forEach(student => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="card-top">
+          <span>번호: ${student.no}</span>
+          <span>${student.classInfo}</span>
+        </div>
+        <div class="student-name">${student.name}</div>
+        <div class="student-code">코드: ${student.code}</div>
+        <div class="btn-group">
+          <a class="btn btn-pre" href="${PRE_SURVEY_URL}" target="_blank" rel="noopener noreferrer" onclick="copyCode('${student.code}')">사전 설문</a>
+          <a class="btn btn-post" href="${POST_SURVEY_URL}" target="_blank" rel="noopener noreferrer" onclick="copyCode('${student.code}')">사후 설문</a>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
