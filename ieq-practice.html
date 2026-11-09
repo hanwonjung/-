@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="인터넷 윤리 지도사 대비를 위한 중상·상 난이도 모의고사 68문항">
+<title>인터넷 윤리 지도사 모의고사 68문항</title>
+<style>
+:root{color-scheme:light;--ink:#17233c;--muted:#526078;--line:#d7e1ef;--paper:#fff;--wash:#f2f6fb;--blue:#2347a3;--accent:#a3e7d0;--good:#087354;--bad:#ad3150}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Malgun Gothic",sans-serif;word-break:keep-all;overflow-wrap:anywhere}button,select,textarea{font:inherit}button,select{min-height:42px}button{cursor:pointer}a{color:var(--blue)}:focus-visible{outline:3px solid #436ce0;outline-offset:3px}button:disabled{cursor:default;opacity:.45}
+.wrap{width:min(1050px,calc(100% - 36px));margin:auto}.hero{color:#fff;background:#172c58;padding:38px 0 32px}.kicker{color:var(--accent);font-weight:800;letter-spacing:.1em;font-size:.78rem;margin:0}.hero h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.2;margin:9px 0 12px}.hero p:last-child{margin:0;color:#e2eafd}.stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.stats span{display:inline-block;border:1px solid #58729d;border-radius:100px;padding:3px 11px;font-size:.83rem}
+main{padding:22px 0 28px}.toolbar,.card,.navigator{border:1px solid var(--line);background:var(--paper);border-radius:15px}.toolbar{padding:13px 17px;margin-bottom:15px}.toolbar-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.toolbar label{font-weight:750}.toolbar select,button{border:1px solid #b6c5dc;border-radius:9px;background:#fff;color:var(--ink);padding:6px 12px}.toolbar select{max-width:100%}.toolbar .last{margin-left:auto}progress{width:100%;height:8px;accent-color:var(--blue);display:block;margin:9px 0 5px}.progress-label{font-size:.85rem;color:var(--muted);margin:0}.layout{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:15px;align-items:start}.card{padding:clamp(15px,3vw,26px);min-width:0}.tags{margin:0;color:var(--muted);font-size:.85rem;font-weight:700}.card h2{font-size:clamp(1.13rem,3vw,1.45rem);line-height:1.55;margin:8px 0 17px}.num{color:var(--blue);font-variant-numeric:tabular-nums;margin-right:.25em}.choices{border:0;margin:0;padding:0}.choice{display:flex;align-items:baseline;gap:8px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;cursor:pointer}.choice:has(input:checked){border-color:#486dc1;background:#eef4ff}.choice:has(input:focus-visible){outline:3px solid #436ce0;outline-offset:2px}.choice.right{border-color:#6ab8a1;background:#e8f8f1}.choice.wrong{border-color:#d891a3;background:#fff0f3}.choice input{margin:0;flex:none}.choice b{flex:none}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}.response{width:100%;min-height:120px;padding:11px 12px;border:1px solid #b6c5dc;border-radius:9px;resize:vertical;color:var(--ink);background:#fff}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:16px}.primary{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:750}.next{margin-left:auto}.feedback{margin-top:14px;padding:12px 15px;border-radius:10px;background:#f0f5ff;border-left:4px solid var(--blue)}.feedback p{margin:4px 0}.good{color:var(--good)}.bad{color:var(--bad)}.navigator{padding:13px}.navigator h2{font-size:.96rem;margin:0 0 9px}.map{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.map button{padding:0;min-height:34px;font-size:.81rem;font-variant-numeric:tabular-nums}.map button.done{background:#e8f6f1;border-color:#9acbbb}.map button[aria-current=true]{border-color:var(--blue);box-shadow:inset 0 0 0 1px var(--blue);color:var(--blue);font-weight:800}.key{font-size:.78rem;color:var(--muted);margin:8px 0 0}.references{color:var(--muted);font-size:.85rem;margin-top:17px}.references summary{cursor:pointer}.references ul{margin-top:6px}.results-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:8px 0 15px}.metric{border:1px solid var(--line);border-radius:9px;padding:8px 10px}.metric strong{display:block;font-size:1.1rem}.review{border-top:1px solid var(--line);padding:8px 0}.review summary{cursor:pointer}.review p{margin:5px 0}.print-sheet{display:none}
+@media(max-width:710px){.layout{grid-template-columns:1fr}.map{grid-template-columns:repeat(10,minmax(0,1fr))}.hero{padding:26px 0}.toolbar .last{margin-left:0}}@media(max-width:420px){.map{grid-template-columns:repeat(8,minmax(0,1fr))}.wrap{width:calc(100% - 24px)}}
+@media print{body{background:#fff;color:#000;font-size:10.5pt;line-height:1.45}.hero,main,.page-footer{display:none!important}.print-sheet{display:block}.print-sheet h1{font-size:19pt;margin:0 0 9pt}.print-sheet h2{font-size:13pt;margin:13pt 0 5pt;break-after:avoid}.print-item{break-inside:avoid;margin:0 0 10pt}.print-item p{margin:2pt 0}.print-item ol{margin:3pt 0;padding-left:25pt}.line{height:15pt;border-bottom:1px solid #bbb}.print-meta{color:#444;font-size:9pt}@page{size:A4;margin:14mm}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="wrap"><p class="kicker">IEQ 지도사 대비 · 학습용 모의고사</p>
+<h1>인터넷 윤리 지도사 모의고사</h1>
+<p>사례 속에서 판단 근거를 찾고, 현장에서 취할 조치를 결정해 보세요.</p>
+<div class="stats"><span>총 68문항</span><span>이론 40 · 실무 28</span><span>4지선다 52 · 주관식 16</span><span>중상~상</span></div></div>
+</header>
+<main class="wrap">
+<section class="toolbar" aria-label="문제 범위와 진행률">
+<div class="toolbar-row"><label for="scope">문제 범위</label><select id="scope"><option value="all">전체 68문항</option><option value="theory">이론 40문항</option><option value="practical">실무 28문항</option></select>
+<button id="report" type="button">채점 결과</button>
+<button class="last" id="print-quiz" type="button">문제 인쇄</button><button id="print-key" type="button">해설 인쇄</button></div>
+<progress id="progress" aria-label="선택한 범위의 응답 진행률"></progress><p id="progress-label" class="progress-label"></p>
+</section>
+<div class="layout">
+<section id="card" class="card" aria-label="문제 및 답안"></section>
+<nav class="navigator" aria-label="문항 이동"><h2>문항 이동</h2><div id="map" class="map"></div><p class="key">초록 배경은 응답을 작성한 문항입니다.</p></nav>
+</div>
+<details class="references"><summary>출제 범위와 참고 자료</summary>
+<p>제공된 모의고사의 이론·실무 16개 영역을 바탕으로 사례형 문항을 새로 작성했습니다. 문항 구성과 배점은 이 학습용 모의고사에 적용됩니다.</p>
+<ul>
+<li><a href="https://creativecommons.org/cc-licenses/">Creative Commons 공개 라이선스 안내</a></li>
+<li><a href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research">UNESCO 교육 및 연구에서의 생성형 AI 지침</a></li>
+<li><a href="https://www.w3.org/TR/turingtest/">W3C CAPTCHA 접근성 안내</a></li>
+<li><a href="https://www.unicef.org/stories/how-to-stop-cyberbullying">UNICEF 사이버 괴롭힘 대응 안내</a></li>
+<li><a href="https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf">CISA 피싱 저항성 다중 인증 안내</a></li>
+<li><a href="https://www.cisa.gov/sites/default/files/publications/CISA_MS-ISAC_Ransomware%20Guide_S508C.pdf">CISA 랜섬웨어 대응 가이드</a></li>
+</ul></details>
+</main>
+<section id="print-sheet" class="print-sheet" aria-label="인쇄 자료"></section>
+<script>
+'use strict';
+const bank = [
+{"id":1,"section":"theory","category":"인터넷 문화 각론 · 인터넷 윤리 개념","type":"M","level":"중상","prompt":"학교 커뮤니티 운영자가 ‘안전한 토론’을 위해 모든 회원의 실명과 연락처를 게시글에 표시하려 한다. 익명성 악용과 참여자의 권리를 함께 고려한 운영 방안은?","options":["별칭 사용을 보장하고, 글에 문제가 생기면 회원들의 공개 투표로 제재를 결정한다.","회원 신원은 제한된 담당자만 확인하고, 공개 글은 별칭으로 표시하며, 신고와 이의제기 절차를 운영한다.","기본값은 실명 공개로 하고, 피해를 신고한 회원만 별칭을 쓸 수 있게 한다.","실명과 연락처를 공개하되, 게시글은 한 달 후 검색 결과에서 숨긴다."],"key":1,"explanation":"신원 확인과 공개 범위를 구분하면 개인정보 노출을 줄이면서, 신고와 이의제기 절차를 통해 책임 있는 참여를 지원할 수 있다."},
+{"id":2,"section":"theory","category":"인터넷 문화 각론 · 인터넷 윤리 개념","type":"M","level":"상","prompt":"학생이 ‘괴롭힘을 멈추자’는 취지로 가해 게시물을 인용하려 한다. 해악금지 원칙을 우선 적용할 때 가장 적절한 판단은?","options":["사건의 핵심을 비식별 사례로 설명하고, 원문은 조치에 필요한 담당자에게만 전달한다.","글쓴이의 이름만 가린 뒤 피해 학생의 사진이 포함된 원문을 게시한다.","게시물에 비판 문구를 덧붙여 학급 채팅방에 원문을 공유한다.","사진은 빼고 피해 학생의 별명과 댓글이 포함된 대화록을 공개한다."],"key":0,"explanation":"선의로 공유해도 피해자를 알아볼 수 있는 정보가 퍼지면 추가 피해가 생긴다. 문제 제기와 증거 전달의 범위를 나누어야 한다."},
+{"id":3,"section":"theory","category":"인터넷 문화 각론 · 인터넷 윤리 개념","type":"M","level":"중상","prompt":"공개 자료집의 도표에 오류가 있다는 제보를 받았다. ‘정보를 배포한 사람의 책임’이 가장 잘 드러나는 조치는?","options":["오류 제보자의 글을 공유하고, 기존 이용자가 각자 수치를 다시 확인하도록 한다.","원본을 내려 추가 열람을 막고, 이전에 내려받은 이용자에게는 문의 창구를 안내한다.","원자료와 오류 범위를 확인하고, 수정본과 변경 내역을 게시해 기존 배포처에도 알린다.","같은 주소에 수정본을 올리고, 이전 배포처에는 다음 개정 때 변경 사실을 알린다."],"key":2,"explanation":"책임은 오류 수정과 함께 이미 배포된 정보의 영향을 줄이는 조치까지 포함한다."},
+{"id":4,"section":"theory","category":"인터넷 문화 각론 · 인터넷 윤리 개념","type":"M","level":"상","prompt":"장애 학생이 있는 학급에서 온라인 토론 평가를 설계한다. 정의의 원칙과 평가의 공정성을 함께 살린 방안은?","options":["모든 학생에게 동일한 입력 방식과 시간을 적용하고, 접근이 어려운 경우 재시험을 허용한다.","동일한 근거·논증 기준을 적용하면서, 접근 가능한 텍스트나 음성으로 응답할 수 있게 한다.","접근에 어려움이 있는 학생에게 토론 대신 콘텐츠 시청 확인을 평가한다.","응답 방식을 다양하게 제공하되, 텍스트 제출자에게만 출처 제시를 요구한다."],"key":1,"explanation":"평가하려는 역량과 접근에 필요한 수단을 구분해야 한다. 공통 기준으로 논증을 평가하면서 접근 장벽을 줄일 수 있다."},
+{"id":5,"section":"theory","category":"인터넷 문화 각론 · 인터넷 윤리 개념","type":"M","level":"상","prompt":"게시판에 ‘급식 선택지가 부족하다’는 비판과 담당자 집 주소를 넣은 댓글이 함께 올라왔다. 표현의 자유와 사생활 보호를 고려한 처리로 가장 적절한 것은?","options":["정책 비판은 유지하고 주소 노출 부분을 숨긴 뒤, 적용한 기준과 이의제기 방법을 안내한다.","주소를 삭제하는 동시에 같은 급식 사안을 다루는 토론을 잠시 일괄 종료한다.","담당자가 공개 삭제를 요청할 때까지 글을 유지하고 댓글 작성자에게 주의만 준다.","관련 글은 그대로 두고 급식 정책에 관한 담당자의 설명을 상단에 고정한다."],"key":0,"explanation":"문제가 되는 정보에 초점을 맞추면 정책 비판에 필요한 표현의 공간을 유지하면서 사생활 침해를 줄일 수 있다."},
+{"id":6,"section":"theory","category":"인터넷 문화 각론 · 인터넷 문화 이해 및 분석","type":"M","level":"중상","prompt":"추천 피드에서 같은 주장만 반복해 본 학생이 ‘대부분의 사람이 이 주장에 동의한다’고 결론 내렸다. 가장 타당한 검증 방법은?","options":["추천 피드의 개인화 가능성을 고려하고, 조사 표본과 독립적인 다른 출처를 확인한다.","같은 플랫폼에서 인기 순으로 정렬하고 상위 글의 댓글 비율을 확인한다.","같은 콘텐츠를 이용하는 친구들의 의견을 모아 피드 결과와 대조한다.","새 계정에 처음 표시된 콘텐츠의 찬반 비율을 전체 여론으로 사용한다."],"key":0,"explanation":"추천 화면에서 관찰한 콘텐츠는 전체 여론의 대표 표본이 아니다. 조사 대상과 수집 방식이 확인되는 근거가 필요하다."},
+{"id":7,"section":"theory","category":"인터넷 문화 각론 · 인터넷 문화 이해 및 분석","type":"M","level":"중상","prompt":"동아리에서 친근한 장난으로 통하던 별명이 공개 영상에 쓰이자 당사자가 모욕감을 느꼈다. 맥락 붕괴 관점의 설명은?","options":["콘텐츠를 보는 사람이 늘면서, 같은 의미를 이해하는 사람의 비율도 함께 늘었다.","영상으로 옮긴 뒤 정보가 기록되면서, 장난의 원래 의미를 확인하기 쉬워졌다.","서로 다른 청중이 같은 콘텐츠를 접하면서, 작은 집단에서 공유하던 의미와 공개 맥락이 충돌했다.","실명이 공개되는 플랫폼에서 청중이 늘면서, 별명에 관한 당사자의 동의 범위도 넓어졌다."],"key":2,"explanation":"청중이 달라지면 관계와 상황에 기대던 표현이 다르게 해석될 수 있다. 제한된 집단에서의 사용과 공개 사용의 조건을 구분해야 한다."},
+{"id":8,"section":"theory","category":"인터넷 문화 각론 · 인터넷 문화 이해 및 분석","type":"M","level":"상","prompt":"지역 행사 취소설을 다룬 게시물 세 개가 모두 같은 익명 캡처를 출처로 삼는다. 이 상황을 평가하는 기준으로 가장 적절한 것은?","options":["문장이 조금씩 다르면 서로 다른 증거로 간주하고 댓글 반응을 비교한다.","가장 오래된 게시물의 작성자가 내용을 수정하지 않았다면 그 글을 원본으로 확정한다.","게시 시각이 서로 다르면 독립적으로 취재된 것으로 보고 다수 의견을 따른다.","인용 경로를 추적해 근거가 하나인지 확인하고, 주최 측의 날짜가 표시된 원문을 찾는다."],"key":3,"explanation":"여러 글이 한 캡처를 재인용하면 독립된 검증이 아니다. 발표 주체와 시점이 확인되는 자료를 찾아야 한다."},
+{"id":9,"section":"theory","category":"인터넷 문화 각론 · 인터넷 문화 이해 및 분석","type":"M","level":"상","prompt":"같은 기사 아래에서 실명 계정의 모욕 댓글은 적고 별칭 계정에서 많았다. 온라인 탈억제와 관련한 해석으로 가장 타당한 것은?","options":["운영 규칙이 같다면 이용자 구성에 차이가 있어도 별칭 사용이 유일한 원인이라고 본다.","별칭 사용자가 더 솔직하므로 모욕성의 차이를 이용자 태도의 정확한 반영으로 본다.","동일한 기사였으므로 계정 표시 방식의 효과가 확인됐다고 결론 내린다.","별칭이 탈억제에 영향을 줄 가능성을 살피되, 운영 기준과 이용자 구성의 차이도 확인한다."],"key":3,"explanation":"관찰된 관련성에는 참여자 구성과 댓글 관리 등 다른 요인이 개입할 수 있다. 두 집단의 차이만으로 인과를 단정하기 어렵다."},
+{"id":10,"section":"theory","category":"인터넷 문화 각론 · 인터넷 문화 이해 및 분석","type":"M","level":"중상","prompt":"커뮤니티에서 과거의 댓글이 지워졌지만 검색 미리보기와 다른 이용자의 캡처가 남아 있다. 가장 적절한 설명은?","options":["검색 결과 제외를 신청하면 다른 서비스에 올라간 이미지도 함께 사라진다.","원문이 열리지 않으므로 캡처에 의한 추가 노출 가능성은 증거에서 제외한다.","게시 위치별로 복제본과 색인이 남을 수 있으므로, 노출 경로를 확인하고 각각에 맞춰 대응한다.","원문 삭제 시각이 지나면 남은 캡처도 해당 서비스의 삭제 정책에 따라 순차적으로 지워진다."],"key":2,"explanation":"디지털 콘텐츠는 캡처·재게시·색인을 거치며 원문과 별개로 남을 수 있다. 삭제와 추가 노출 대응을 구분한다."},
+{"id":11,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 개념","type":"M","level":"중상","prompt":"모욕 영상은 처음 한 번 게시됐지만 여러 계정이 사흘간 반복 공유했다. 피해 평가에 적절한 관점은?","options":["최초 게시와 후속 확산을 구분하고, 재노출 빈도와 피해 학생에게 이어진 영향을 함께 확인한다.","동일 영상이므로 새로 찍은 영상이 추가될 때까지 피해 변화는 평가하지 않는다.","최초 작성 횟수를 기준으로 반복성을 판단하고 공유는 이용자 반응으로만 분류한다.","영상이 비공개 그룹에 게시됐다면 전체 공유 수만 기록하고 개인별 영향을 제외한다."],"key":0,"explanation":"한 번 제작한 콘텐츠도 복제와 재유통으로 피해자가 반복해서 노출될 수 있다. 행위 경로와 피해 양상을 나눠 본다."},
+{"id":12,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 개념","type":"M","level":"상","prompt":"두 학생이 온라인에서 의견 충돌을 겪은 뒤, 한 학생을 놀리는 반응 이미지가 돌고 반 친구들이 그 학생을 공동 작업방에서 계속 뺐다. 단순한 의견 충돌을 넘어선 정황을 가장 잘 설명한 것은?","options":["모욕적 문장보다 반응 이미지의 의도가 불분명하므로 배제 기록만 살핀다.","최초 갈등에서 양쪽이 의견을 밝혔다면 이후의 행위도 의견 충돌의 연장으로 본다.","공동 작업방은 사적 공간이므로 배제와 이미지 공유를 별개 사안으로만 본다.","개인에 대한 반복 조롱과 집단 배제가 결합되어 대응 능력의 차이가 생겼다."],"key":3,"explanation":"갈등의 시작보다 이후 행위의 표적성·반복성·집단에 의한 힘의 차이가 판단에 중요하다."},
+{"id":13,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 개념","type":"M","level":"중상","prompt":"허위라는 사실을 알고도 만든 공지와 이를 사실로 믿고 전달한 게시물의 차이를 가장 정확히 설명한 것은?","options":["후속 전달자의 의도가 없었다면 공지의 신뢰도를 떨어뜨린 영향도 없다고 판단한다.","최초 글을 수정했다면 후속 게시물의 진위는 전달 시점과 무관하게 바로잡힌다.","두 게시물이 같은 영향을 냈다면 허위인 줄 알았는지의 차이도 없다고 평가한다.","첫 게시의 의도적 기만과 후속 전달의 비의도적 오류를 구분하며, 양쪽의 확산 영향은 따로 본다."],"key":3,"explanation":"정보를 만든 사람과 퍼뜨린 사람의 의도는 다를 수 있다. 잘못된 정보의 영향과 의도는 각각 살펴야 한다."},
+{"id":14,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 개념","type":"M","level":"상","prompt":"서비스 이용자가 자정 이후 앱을 이용한 시간이 늘었다. 과의존 위험을 선별할 때 추가로 확인할 항목의 조합은?","options":["즐거움의 정도, 앱 순위, 또래 이용률로 조절 실패 가능성을 판단한다.","사용을 줄이려는 시도와 조절의 어려움, 수면이나 학업에 생긴 변화, 이용 상황을 확인한다.","야간 이용 비율, 유료 결제 횟수, 부모의 불만 빈도를 합산한다.","일주일 총사용시간, 앱 설치 개수, 신규 친구 수를 다른 학생 평균과 비교한다."],"key":1,"explanation":"이용시간은 단서 중 하나다. 조절 곤란과 일상 기능에 미치는 영향, 맥락을 함께 살펴야 한다."},
+{"id":15,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 개념","type":"M","level":"상","prompt":"서비스 가입 화면에서 ‘전체 허용’은 눈에 잘 띄지만, 선택 항목을 거절하려면 여러 화면을 이동해야 한다. 인터넷 역기능 관점에서 주된 문제는?","options":["거절 버튼이 어딘가에 있으므로 동의 의사는 화면 구조와 무관하게 명확하다.","기본 선택이 없는 경우에만 선택 구조가 이용자 판단에 영향을 줄 수 있다.","선택 구조가 제공자의 이익에 유리하게 설계되어 이용자의 실질적 선택을 어렵게 만든다.","개인정보 이용 목적을 별도 문서로 제공했다면 버튼 배치의 영향은 평가할 필요가 작다."],"key":2,"explanation":"정보를 공개하는 것과 선택권을 실제로 행사하기 쉽게 만드는 것은 별개의 과제다."},
+{"id":16,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 실태","type":"M","level":"상","prompt":"교육 전후 한 달간 온라인 괴롭힘 신고가 8건에서 15건으로 늘었다. 같은 시기에 익명 신고 창구를 신설했다. 가장 타당한 해석은?","options":["익명 신고 창구를 열었으므로 실제 발생이 줄었다고 해석하고 신고 변화는 제외한다.","전후 집단이 같으므로 창구 신설 여부와 무관하게 신고 건수를 직접 비교한다.","신고 접근성 변화와 실제 발생 변화가 함께 반영될 수 있어, 익명 실태조사 등 다른 지표를 비교한다.","신고 수의 증가분을 모두 새로 발생한 피해로 계산해 교육 효과를 평가한다."],"key":2,"explanation":"신고 건수는 실제 발생과 신고 행동의 영향을 함께 받는다. 서로 다른 측정 방식으로 교차 확인해야 한다."},
+{"id":17,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 실태","type":"M","level":"중상","prompt":"교내 실태 조사에서 전체 학생의 피해율을 추정하려고 ‘디지털 상담실을 찾은 학생’에게만 설문을 돌렸다. 가장 직접적인 개선책은?","options":["상담실 이용자와 담임 추천 학생을 합친 뒤 학교 전체로 일반화한다.","상담실 이용자를 더 오래 모집해 표본 수를 늘리고 학교 평균을 추정한다.","상담 이용자 중 피해 경험이 많은 학생과 적은 학생의 응답 수를 같게 맞춘다.","학년·학급을 고려해 전체 학생 집단에서 표집하고, 응답률과 무응답 가능성을 보고한다."],"key":3,"explanation":"상담 이용 여부가 피해 경험과 관련될 수 있다. 목표 집단을 포괄하는 표집이 필요하다."},
+{"id":18,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 실태","type":"M","level":"중상","prompt":"여러 채팅방에서 같은 비방 화면이 각각 신고됐다. ‘피해 학생 수’와 ‘콘텐츠 재유통 규모’를 구분해 기록하는 방법은?","options":["재유통이 확인된 채팅방 수를 피해 학생 수로 쓰고 신고 접수 건수는 제외한다.","보호된 식별값으로 피해 학생을 중복 제거하고, 별도로 확인된 재게시 위치와 시각을 기록한다.","최초 화면이 같으므로 피해 학생 수와 재게시 건수를 모두 한 건으로 처리한다.","신고가 들어온 건마다 피해 학생 한 명과 재게시 한 건을 함께 추가한다."],"key":1,"explanation":"측정 단위가 학생인지 게시물인지 구분해야 피해 규모와 확산 규모를 각각 파악할 수 있다."},
+{"id":19,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 실태","type":"M","level":"상","prompt":"두 학교를 비교한다. A교는 한 학기 중 ‘경험 1회 이상’, B교는 최근 1개월 중 ‘주 1회 이상’을 피해로 집계했다. 가장 적절한 보고 방법은?","options":["한 학기를 개월 수로 나누어 A교 비율을 환산한 뒤 B교 결과와 바로 비교한다.","학교별 응답자 수로 두 비율을 보정하면 피해의 빈도 기준 차이도 해소된다.","두 비율의 집계 기간과 기준을 명시하고, 순위를 매기려면 공통 기준으로 다시 측정한다.","두 비율을 백분율로 표준화해 순위를 정하고, 집계 기준은 주석에만 남긴다."],"key":2,"explanation":"분모를 맞춰도 기간과 피해를 정의한 기준이 다르면 측정 대상이 달라진다."},
+{"id":20,"section":"theory","category":"인터넷 역기능 각론 · 인터넷 역기능 실태","type":"M","level":"상","prompt":"교육을 받은 학급에서 ‘장난이라고 생각했던 행동’을 괴롭힘으로 분류하는 비율이 높아졌다. 교육 성과 평가에 가장 알맞은 추가 자료는?","options":["괴롭힘이라고 답한 비율을 실제 발생률로 바꾸어 전후 차이를 계산한다.","학생의 교육 만족도를 추가해 피해 경험 감소 여부를 추정한다.","교육 직후 자기평가에서 점수가 오른 학생을 골라 실제 대응이 향상됐다고 판단한다.","같은 시나리오로 행동 판별과 대응 선택을 확인하고, 피해 경험은 동일한 기간 기준으로 별도 추적한다."],"key":3,"explanation":"행동 인식 변화, 실제 피해 경험, 대응 역량은 각각 다른 결과이므로 따로 측정해야 한다."},
+{"id":21,"section":"theory","category":"인터넷 정보보호 각론 · 정보보호 개념","type":"M","level":"중상","prompt":"상담일지의 열람자는 제한됐으나 동기화 오류로 기록 내용이 허가 없이 덮어써졌다. 직접 훼손된 속성과 확인에 적합한 수단은?","options":["기밀성, 저장 파일의 암호화 여부 확인","가용성, 서버 접속 시간 측정","무결성, 버전 이력과 변경 기록 대조","책임 추적성, 공지의 열람 횟수 비교"],"key":2,"explanation":"기록이 원래 상태에서 허가 없이 바뀌었으므로 무결성이 훼손됐다. 이력을 대조하면 변경 범위를 확인할 수 있다."},
+{"id":22,"section":"theory","category":"인터넷 정보보호 각론 · 정보보호 개념","type":"M","level":"상","prompt":"지역별 상담 건수를 공개하려 한다. 섬 지역의 특정 연령·학교유형을 합친 구간에는 한 명만 있다. 최소 공개 원칙을 적용한 가장 적절한 조치는?","options":["한 명인 구간만 가리고, 같은 범위의 총계와 나머지 세부 구간은 그대로 공개한다.","이름 열이 없는 표이므로 모든 구간을 그대로 공개한다.","학교유형을 숫자 코드로 바꾼 뒤 코드표와 세부 집계를 함께 공개한다.","작은 집단을 병합하거나 표시를 제한하고, 다른 표와 결합해 역산할 가능성도 확인한다."],"key":3,"explanation":"직접 식별자가 없어도 희소한 조합이나 집계값 간 차이로 개인이 드러날 수 있다."},
+{"id":23,"section":"theory","category":"인터넷 정보보호 각론 · 정보보호 개념","type":"M","level":"중상","prompt":"수강 신청에 필요한 것은 연락 이메일과 참여 가능 시간이다. 출석관리 업체가 주소·생년월일까지 기본 필수로 요구한다. 적합한 판단은?","options":["필수 입력으로 수집한 뒤 수업 종료 후 한꺼번에 삭제한다.","각 항목의 필요성을 목적별로 검토하고, 신청에 불필요한 항목은 기본 수집에서 제외한다.","주소와 생년월일을 수집하고, 담당 강사의 열람만 막아 최소 수집을 적용한다.","전체 항목을 필수로 받고, 필요성을 느끼지 않는 이용자는 신청을 포기할 수 있게 한다."],"key":1,"explanation":"수집을 최소화하는 판단은 보관 기간이나 접근 제한과 별개로 수집 시점에 적용된다."},
+{"id":24,"section":"theory","category":"인터넷 정보보호 각론 · 정보보호 개념","type":"M","level":"상","prompt":"강사 계정에 교재 게시와 전체 학생 성적 삭제 권한이 모두 들어 있다. 업무에 필요한 범위로 줄이고 긴급 지원도 가능하게 하려면?","options":["모든 역할이 한 관리자 계정을 쓰고, 작업 뒤 이름을 메신저에 남긴다.","업무가 겹치는 기간에는 전체 권한을 부여하고 변경 로그는 일괄 초기화한다.","전체 권한을 계속 주고 월말에 잘못 사용한 경우에만 권한을 줄인다.","역할별 권한을 분리하고, 예외 권한은 승인·만료·접근 기록을 조건으로 부여한다."],"key":3,"explanation":"최소 권한은 맡은 일에 필요한 범위로 접근을 제한한다. 예외 접근은 기간과 책임을 추적할 수 있어야 한다."},
+{"id":25,"section":"theory","category":"인터넷 정보보호 각론 · 정보보호 개념","type":"M","level":"상","prompt":"기관이 매일 백업은 하지만 원본과 백업 모두 동일 계정으로 삭제할 수 있고, 복원 시험은 한 적 없다. 가장 직접적인 개선은?","options":["백업 파일이 열리는지만 확인하고 서비스 복원은 사고 뒤 처음 수행한다.","같은 위치에 백업 횟수를 늘리고, 작업 완료 메시지를 수집한다.","원본과 삭제 권한이 분리된 보호 백업을 두고, 정기적으로 실제 복원 여부를 시험한다.","원본과 백업의 파일 이름을 다르게 하고 동일 계정의 접근은 유지한다."],"key":2,"explanation":"공통 권한을 가진 계정이 탈취되면 원본과 백업이 함께 손상될 수 있다. 복원 시험으로 실효성을 확인한다."},
+{"id":26,"section":"theory","category":"인터넷 정보보호 각론 · 정보 침해 실태","type":"M","level":"중상","prompt":"여러 서비스에서 유출된 아이디와 비밀번호 조합을 공격자가 교육 사이트 로그인에 자동으로 대입했다. 공격 유형과 우선 대응의 연결로 옳은 것은?","options":["서비스 거부 공격, 서버의 처리량만 증설한다.","계정 복구 악용, 로그인 실패 기록의 보관 기간을 줄인다.","패스워드 스프레이, 로그인 전 화면에 보안 공지를 표시한다.","크리덴셜 스터핑, 서비스별 고유 비밀번호와 다중 인증을 적용한다."],"key":3,"explanation":"기존 유출 조합을 다른 서비스에 그대로 대입하는 공격이다. 비밀번호 재사용을 줄이고 별도 인증을 적용하면 위험을 낮출 수 있다."},
+{"id":27,"section":"theory","category":"인터넷 정보보호 각론 · 정보 침해 실태","type":"M","level":"상","prompt":"교육 사이트 관리자에게 교장 이름으로 긴급 송금 메일이 왔다. 평소 문체와 같고 실제 행사명이 들어 있지만 새 계좌를 사용하라고 한다. 가장 신뢰할 만한 확인은?","options":["기존에 등록한 연락처로 발신자를 별도로 확인하고, 계좌 변경 절차의 승인 근거를 대조한다.","같은 스레드의 과거 대화와 문체가 맞으면 메일에 적힌 전화번호로 확인한다.","메일에 첨부된 계좌 증빙과 행사명이 맞으면 같은 메일에 회신해 확인한다.","기관 로고와 서명이 맞으면 소액을 먼저 송금해 수신자가 응답하는지 본다."],"key":0,"explanation":"알려진 맥락도 공격에 쓰일 수 있다. 메일과 독립적으로 확보한 경로로 계좌 변경을 확인한다."},
+{"id":28,"section":"theory","category":"인터넷 정보보호 각론 · 정보 침해 실태","type":"M","level":"중상","prompt":"공용 컴퓨터에서 학습 플랫폼을 닫았지만 로그아웃을 하지 않았다. 다음 사용자가 주소를 다시 열어 전 사용자의 계정으로 들어갔다. 가장 직접적인 원인은?","options":["서비스에 접속한 통신이 반드시 암호화되지 않았다.","서비스의 인증 세션이 공용 브라우저에 남아 있었다.","비밀번호가 반드시 브라우저에 자동 저장되어 있었다.","공용 PC의 운영체제가 반드시 악성코드에 감염되었다."],"key":1,"explanation":"브라우저를 닫는 행동이 항상 서비스 세션을 끝내지는 않는다. 계정 접근에는 세션이 그대로 사용될 수 있다."},
+{"id":29,"section":"theory","category":"인터넷 정보보호 각론 · 정보 침해 실태","type":"M","level":"상","prompt":"직원은 행사 신청 명단의 열람 권한이 있지만 업무와 관계없는 홍보사에 명단을 전송했다. 침해 발생 경로를 가장 잘 설명한 것은?","options":["명단의 이름과 연락처를 바꾸지 않았으므로 정보보호 속성에 변화가 없다.","승인된 접근권한을 사용했지만, 처리 목적과 허용된 제공 범위를 벗어났다.","접근권한이 승인된 직원이었으므로 침해 여부는 홍보사의 재유출 여부로만 판단한다.","파일이 암호화되어 전송됐다면 홍보사가 열람했어도 제공 범위는 지켜졌다."],"key":1,"explanation":"업무상 열람 권한은 제삼자에게 제공할 권한과 별개다. 전송 보안도 제공 범위를 대신하지 않는다."},
+{"id":30,"section":"theory","category":"인터넷 정보보호 각론 · 정보 침해 실태","type":"M","level":"상","prompt":"공개 링크로 잘못 공유한 자료에서 일부 외부 열람이 기록됐다. ‘누가 어떤 파일을 어느 기간에 봤는지’ 조사할 때 가장 타당한 접근은?","options":["열람 로그에 표시되지 않은 이용자는 접근 가능 기간에도 아무 파일을 열지 않았다고 결론 내린다.","설정 화면의 현재 상태를 캡처한 뒤 과거 전체 기간에도 같은 설정이었을 것으로 본다.","공유 설정 변경 이력과 접속 기록을 보존해 시간대를 맞추고, 기록이 없는 구간의 한계를 명시한다.","공유 링크가 전달된 채팅방 인원수와 실제 열람한 인원수를 같은 값으로 보고한다."],"key":2,"explanation":"권한 변화와 실제 접근은 다른 기록을 필요로 한다. 기록의 범위와 누락 가능성을 밝혀야 한다."},
+{"id":31,"section":"theory","category":"교육 및 상담 이론 · 교육 이론","type":"M","level":"중상","prompt":"수업 목표가 ‘학생이 낯선 사례에서 재공유의 문제점을 근거로 판단한다’이다. 목표에 가장 적합한 평가 과제는?","options":["수업에서 본 사례에 대한 교사의 결론을 다시 고르고 이유 문장을 찾는다.","인터넷 윤리 구호를 만들어 발표하고 학급 투표에서 받은 표를 합산한다.","처음 보는 채팅 사례에서 공유 여부를 정하고, 피해 위험과 대안으로 판단을 뒷받침한다.","해악금지·존중·책임의 뜻을 교재 순서대로 쓰고, 틀린 표현을 수정한다."],"key":2,"explanation":"새로운 사례를 근거로 판단하는 목표에는 전이가 필요한 수행 과제가 맞다."},
+{"id":32,"section":"theory","category":"교육 및 상담 이론 · 교육 이론","type":"M","level":"상","prompt":"모의 피싱 실습에서 몇몇 학생이 발신자 표시 이름만 보고 진짜라고 판단했다. 형성평가 자료를 수업에 반영하는 방식은?","options":["전원에게 경고 문구를 다시 보여주고 이해 여부를 만족도 설문으로 확인한다.","오답자에게만 감점을 적용하고, 학급 평균을 기준으로 다음 단원 진도를 정한다.","오류 유형을 확인하고 별도 경로 확인을 시범 보인 뒤, 새 사례에서 확인 과정을 다시 수행하게 한다.","같은 화면을 반복 제시해 정답 비율이 오른 뒤 단원 수업을 마친다."],"key":2,"explanation":"형성평가는 학습 중 드러난 오개념을 바탕으로 수업을 조정하고 학습 변화를 확인한다."},
+{"id":33,"section":"theory","category":"교육 및 상담 이론 · 교육 이론","type":"M","level":"중상","prompt":"강사가 허위 정보 검증 전략을 가르친 뒤, 학습자가 다음 달 새 플랫폼에서도 사용할 수 있는지 보려 한다. 가장 적합한 방법은?","options":["새 플랫폼에서 미검증 게시물을 제시하고, 독립 출처 확인 과정을 실제로 수행하게 한다.","용어를 교재 없이 말할 수 있는지 점검하고 다른 플랫폼 수행도 같은 점수로 추정한다.","수업에서 제시한 검증 순서를 같은 예시로 재생해 정확히 따라 하는지 본다.","새 플랫폼에 대한 선호도와 과거 플랫폼의 사용 시간을 비교한다."],"key":0,"explanation":"전이 평가는 이전에 배운 전략을 새로운 상황에서 독립적으로 사용하는지 확인한다."},
+{"id":34,"section":"theory","category":"교육 및 상담 이론 · 교육 이론","type":"M","level":"상","prompt":"두 채점자가 같은 윤리 딜레마 답안에 크게 다른 점수를 줬다. 가장 먼저 바꾸기 적합한 채점 설계는?","options":["채점자별 전문성을 존중해 서로 다른 기준으로 채점한 뒤 두 결과를 함께 제공한다.","총점을 늘리고 채점자 두 명이 독립적으로 준 점수의 평균을 최종 점수로 쓴다.","학생에게 기준을 비공개로 하고 글의 분량에 따른 객관적 배점을 추가한다.","근거의 관련성·피해 분석·대안 실현 가능성을 구분하고, 수준별 예시 답안으로 채점 기준을 맞춘다."],"key":3,"explanation":"평가 요소를 관찰 가능한 수준으로 구체화하고 예시로 합의하면 채점자 간 일관성을 높일 수 있다."},
+{"id":35,"section":"theory","category":"교육 및 상담 이론 · 교육 이론","type":"M","level":"상","prompt":"토론 수업에서 능숙한 학생만 발언한다. 목표는 모든 학생이 타인의 관점을 검토하고 자신의 판단을 설명하는 것이다. 가장 적합한 설계는?","options":["발언 수를 동일하게 제한하고 발표한 문장 수에 비례해 토론 점수를 준다.","발언 기회를 자율로 두고 토론 종료 뒤 그룹 대표의 발표만 평가한다.","토론 전까지 각자 글을 쓰게 하고 다른 관점을 듣는 단계는 원하는 학생만 참여하게 한다.","개별 기록 후 소그룹에서 발언 기회를 배분하고, 토론 뒤 판단과 수정 근거를 개인별로 받는다."],"key":3,"explanation":"개인 준비, 구조화된 참여, 판단 수정의 기록을 연결하면 목표에 해당하는 수행을 모든 학생에게서 확인할 수 있다."},
+{"id":36,"section":"theory","category":"교육 및 상담 이론 · 생활지도 및 상담 이론","type":"M","level":"중상","prompt":"학생이 ‘다들 저를 싫어해요. 채팅방에 들어가기가 무서워요’라고 말한다. 초기 반응으로 적절한 것은?","options":["‘누가 문제를 시작했는지부터 알아야 하니 친구들 이름을 전부 말해 줄래?’","‘채팅방에서 나오면 해결될 수 있으니, 우선 다른 반 친구와 대화해 볼래?’","‘채팅방에 들어가는 게 두렵구나. 그런 느낌이 들었던 일을 이야기해 줄래?’","‘다들 싫어한다는 건 추측이니까, 네가 먼저 말을 걸어 보는 건 어때?’"],"key":2,"explanation":"감정을 반영하고 열린 질문을 사용하면 학생이 자신의 경험을 이야기할 수 있다. 초기에는 해결책을 앞서 제시하기보다 안전하게 듣는다."},
+{"id":37,"section":"theory","category":"교육 및 상담 이론 · 생활지도 및 상담 이론","type":"M","level":"상","prompt":"학생이 ‘상담에서 한 말은 누구에게도 전달되지 않죠?’라고 묻는다. 상담자가 답하는 방식으로 가장 적절한 것은?","options":["학교에서 돕기 위해 담임과 보호자에게 상담 내용 전체를 원칙적으로 전달한다고 안내한다.","비밀보장을 설명하고, 중대한 안전 우려 등 보호를 위해 공유가 필요할 때는 범위와 절차를 알려 준다.","학생이 부담을 느끼지 않게 모든 대화를 절대 공유하지 않겠다고 약속한다.","위험 상황이 확인된 뒤에만 예외를 설명하고, 지금은 상담 내용이 모두 비밀이라고 말한다."],"key":1,"explanation":"상담 초기에 비밀보장과 그 한계를 알리면 신뢰를 형성하고 학생이 정보를 알고 참여할 수 있다."},
+{"id":38,"section":"theory","category":"교육 및 상담 이론 · 생활지도 및 상담 이론","type":"M","level":"상","prompt":"학생이 학급 채팅방을 피하는 이유를 담임은 ‘친구와의 갈등’으로 추정한다. 섣부른 해석을 줄이는 상담 기록은?","options":["담임의 경험을 반영해 친구 갈등으로 기록하고, 다음 상담에서 반박이 나올 때 고친다.","학생의 직접 진술과 확인된 상황을 구분하고, 갈등 가능성은 검토할 가설로 표시한다.","상담자가 받은 인상을 기록하고 구체적 발언은 개인정보 보호를 위해 모두 생략한다.","학생의 표현을 정서 문제 용어로 바꿔 기록하고, 사건 사실은 상담자가 기억한다."],"key":1,"explanation":"관찰·진술·해석을 구분하면 사실처럼 보이는 추정을 줄이고 이후 확인이 가능하다."},
+{"id":39,"section":"theory","category":"교육 및 상담 이론 · 생활지도 및 상담 이론","type":"M","level":"중상","prompt":"과의존이 걱정되는 학생이 ‘새벽 접속을 조금 줄이고 싶다’고 말했다. 학생의 자기결정과 평가 가능성을 살린 목표는?","options":["학생과 함께 평일 중 실천할 취침 전 종료 시각을 정하고, 일주일 뒤 기록을 보며 목표를 조정한다.","상담자가 한 달간 모든 야간 접속을 금지하고, 정해진 목표에 학생이 서명한다.","보호자가 이용 시간을 전부 정하고, 상담에서는 학생이 규칙에 따랐는지만 확인한다.","학생에게 되도록 적게 사용하라고 안내하고, 한 달 뒤 느낌을 구두로 확인한다."],"key":0,"explanation":"학생이 동의한 구체적인 행동 목표와 점검 방법은 자기조절을 연습하고 목표를 조정하기에 적합하다."},
+{"id":40,"section":"theory","category":"교육 및 상담 이론 · 생활지도 및 상담 이론","type":"M","level":"상","prompt":"상담 중 학생이 온라인에서 구체적인 신체 위협을 받고 있다고 말했다. 생활지도의 첫 판단으로 가장 적절한 것은?","options":["사실관계를 빠르게 확인하려고 반 전체 채팅방에 학생의 진술을 그대로 올린다.","신뢰를 지키기 위해 학생이 먼저 상담 내용 공개를 제안할 때까지 기다린다.","일반 인터넷 예절 수업을 먼저 진행하고 이후 같은 일이 생기면 위험을 평가한다.","위협의 구체성과 현재 안전을 확인하고, 학교의 보호 절차에 따라 필요한 사람과 제한적으로 정보를 공유한다."],"key":3,"explanation":"구체적 위협은 안전 확인을 우선한다. 보호에 필요한 정보와 공유 대상을 최소한으로 정한다."},
+{"id":41,"section":"practical","category":"인터넷과 신기술 활용 및 교육 · 정보 공급자와 수용자 윤리","type":"M","level":"상","prompt":"강사가 ‘CC BY-NC-ND 4.0’으로 공개된 인포그래픽을 번역해 무료 공개 자료집에 실으려 한다. 별도의 이용 허락이나 적용되는 예외가 없다고 가정할 때 적절한 방법은?","options":["변경한 부분을 표시하고 자료집 전체에 같은 라이선스를 부여하면 번역본을 공개할 수 있다.","무료 자료집이므로 창작자와 라이선스를 표시하고 번역본을 그대로 공개한다.","번역본을 공개하려면 별도 허락을 구하거나, 공개 번역을 허용하는 다른 자료를 선택한다.","원본 그림은 그대로 두고 말풍선의 문장만 번역하면 번역본을 공개할 수 있다."],"key":2,"explanation":"변경금지 조건은 번역 등 개작물의 공유를 허용하지 않는다. 비영리 배포나 출처 표시는 그 조건을 대신하지 않는다."},
+{"id":42,"section":"practical","category":"인터넷과 신기술 활용 및 교육 · 정보 공급자와 수용자 윤리","type":"M","level":"상","prompt":"지역 교육 계정이 건강 정보를 잘못 요약한 글을 게시해 이용자들이 이미 캡처를 퍼뜨렸다. 정보 공급자로서 적절한 정정 방법은?","options":["정정문 대신 원글에 ‘참고용’이라고 덧붙이고 독자가 외부 출처를 찾도록 한다.","같은 배포 채널에 확인된 근거와 정정 내용을 표시하고, 주요 재게시 계정에도 정정 사실을 알린다.","원글을 삭제하고 일주일 뒤 별도의 일반 건강 수칙을 게시한다.","원글의 문장만 조용히 고치고, 정정 내역은 자료 작성자만 볼 수 있게 남긴다."],"key":1,"explanation":"정정은 이미 잘못된 정보를 본 이용자에게 닿아야 한다. 같은 채널과 주요 확산 경로를 이용하면 오류를 바로잡을 기회가 커진다."},
+{"id":43,"section":"practical","category":"인터넷과 신기술 활용 및 교육 · 정보 공급자와 수용자 윤리","type":"S","level":"상","prompt":"행사 취소를 알리는 12초 영상이 퍼졌다. 영상에는 행사명은 보이지만 촬영 날짜와 앞뒤 발언이 없다. 정보 수용자가 공유 전에 할 검증 행동 두 가지와 확인에 실패했을 때의 대응 한 가지를 쓰시오.","answer":"행사 주최 측의 최신 공지를 확인하고, 전체 영상이나 원 게시물을 찾아 촬영 날짜와 앞뒤 발언을 대조한다. 확인이 안 되면 취소 사실로 공유하는 일을 보류한다.","rubric":"최신 공식 공지 확인 1점 / 전체 영상이나 원 게시물의 시점·맥락 대조 1점 / 미확인 내용 공유 보류 1점"},
+{"id":44,"section":"practical","category":"인터넷과 신기술 활용 및 교육 · 정보 공급자와 수용자 윤리","type":"S","level":"상","prompt":"학교 공식 채널에 올린 대회 결과에 순위 오류가 있다. 이미 홍보팀이 외부 단체에도 결과표를 보냈다. 정정문에 들어갈 핵심 내용과 배포 조치까지 세 가지로 쓰시오.","answer":"공식 결과표를 확인해 잘못된 순위와 올바른 순위를 명시한다. 게시물과 첨부를 수정하고 변경 일시를 남긴다. 기존 수신 단체에 수정본을 보내 재배포본의 교체를 요청한다.","rubric":"확인된 오류와 수정 내용 명시 1점 / 기존 게시물 정정과 변경 기록 1점 / 기존 외부 수신처 통지 또는 교체 요청 1점"},
+{"id":45,"section":"practical","category":"인터넷과 신기술 활용 및 교육 · 인터넷과 신기술 활용","type":"M","level":"상","prompt":"생성형 AI가 수행평가 점수와 의견을 작성했다. 일부 학생의 답안은 표현 방식이 달라 낮게 평가됐다. 평가자가 취할 조치로 가장 적절한 것은?","options":["공통 루브릭으로 원답안을 다시 확인하고, 표현 방식이 점수에 미친 영향을 점검한 뒤 사람이 최종 판단한다.","AI가 작성한 근거를 학생에게 보내 스스로 오류를 찾아 이의제기하게 한 뒤 해당 답안만 검토한다.","AI의 점수는 유지하고, 특정 표현 유형의 답안을 낸 학생에게 일괄 가산점을 부여한다.","다른 생성형 AI의 점수를 더해 평균을 내고, 원답안은 점수 차이가 가장 큰 경우만 읽는다."],"key":0,"explanation":"평가 기준의 적용과 차별적 영향은 원답안을 살펴 확인해야 한다. 최종 평가 책임은 평가자가 맡는다."},
+{"id":46,"section":"practical","category":"인터넷과 신기술 활용 및 교육 · 인터넷과 신기술 활용","type":"M","level":"중상","prompt":"학생이 AI가 제시한 논문을 참고문헌에 넣으려 한다. 논문 제목은 실제 연구처럼 보이지만 링크가 열리지 않는다. 가장 적절한 조치는?","options":["같은 AI에 논문이 실제인지 두 번 묻고 답이 일치하면 인용한다.","학술 데이터베이스나 발행처에서 서지 정보와 원문을 찾고, 주장까지 대조한 뒤 확인된 논문만 인용한다.","저자 이름과 학술지 이름이 각각 검색되면 논문 원문은 확보하지 못해도 인용한다.","다른 AI가 유사한 연구 결과를 출력하면 두 결과를 종합해 최초 논문의 존재를 인정한다."],"key":1,"explanation":"서지 정보가 그럴듯해도 논문과 인용 주장은 별도로 검증해야 한다. 발행처 또는 학술 데이터베이스를 확인한다."},
+{"id":47,"section":"practical","category":"인터넷과 신기술 활용 및 교육 · 인터넷과 신기술 활용","type":"S","level":"상","prompt":"강사가 실제 학생 상담일지 20건을 외부 생성형 AI에 입력해 상담 유형을 분류하려 한다. 수업용 사례를 만드는 목적을 유지하면서 지킬 조치를 세 가지 쓰시오.","answer":"실제 기록의 외부 전송을 보류한다. 분류 활동에 필요한 특성만 반영한 가상 사례를 직접 만든다. 외부 도구를 쓰려면 기관이 승인한 처리 조건과 저장·학습 설정을 확인한다.","rubric":"실제 기록 입력 보류 1점 / 가상 사례 등 식별 위험을 줄인 대체 자료 사용 1점 / 승인된 도구와 데이터 처리 조건 확인 1점"},
+{"id":48,"section":"practical","category":"인터넷과 신기술 활용 및 교육 · 인터넷과 신기술 활용","type":"S","level":"상","prompt":"학생이 교사의 목소리를 흉내 낸 합성 안내 음성을 제작하려 한다. 동의, 오인 방지, 공개 범위에서 각각 한 가지 조치를 쓰시오.","answer":"사용 목적과 공개 대상을 설명하고 교사의 사전 동의를 받는다. 음성 시작 부분이나 게시 화면에 합성 음성임을 표시한다. 합의한 학급 공간에만 공개하거나 공개용으로는 일반 합성 음성을 사용한다.","rubric":"목적과 공개 대상을 알린 사전 동의 1점 / 합성 사실의 명확한 표시 1점 / 동의 범위 내 제한 공개 또는 비모방 음성으로 대체 1점"},
+{"id":49,"section":"practical","category":"역기능 예방 및 대응 기술 활용과 교육 · 사전 대응","type":"M","level":"상","prompt":"동아리 사이트의 자동 가입을 줄이기 위해 이미지 CAPTCHA를 도입했더니 화면 낭독기 이용자가 가입하지 못한다. 가장 적합한 설계 변경은?","options":["이미지 CAPTCHA에 음성 방식만 추가하고, 두 경로를 쓰기 어려운 이용자에게는 별도 경로를 두지 않는다.","대체 인증 경로를 제공하고, 접근성을 시험하면서 요청 빈도 제한 등 다른 방어 수단도 함께 적용한다.","자동 가입을 제한하는 대신 가입 양식의 입력 항목을 늘려 실제 이용자임을 확인한다.","이미지의 대비를 높이고 현재 방식으로 가입하기 어려운 이용자에게 지인의 도움을 요청하게 한다."],"key":1,"explanation":"봇을 줄이는 목표와 가입 접근성은 함께 평가해야 한다. 다양한 인증 경로와 별도 방어를 조합한다."},
+{"id":50,"section":"practical","category":"역기능 예방 및 대응 기술 활용과 교육 · 사전 대응","type":"M","level":"중상","prompt":"학급 채팅방에서 조롱이 일어나기 전에 예방 교육을 진행한다. 주변 학생의 행동을 바꾸는 데 가장 직접적인 활동은?","options":["가상 대화에서 재전송 멈추기, 피해 학생에게 비공개로 묻기, 정해진 경로로 알리기를 역할별로 연습한다.","가상의 가해자에게 공개 댓글로 맞대응하는 토론을 진행하고 가장 강한 문구를 고른다.","교사가 규칙을 설명하고 학생들이 위반 행위의 명칭을 시험에서 쓰게 한다.","학생들이 조롱을 멈추자는 포스터를 만들고 조회 수가 높은 작품을 평가한다."],"key":0,"explanation":"주변 학생이 실제로 취할 수 있는 대체 행동과 신고 경로를 연습하면 규칙을 상황에서 적용하기 쉽다."},
+{"id":51,"section":"practical","category":"역기능 예방 및 대응 기술 활용과 교육 · 사전 대응","type":"S","level":"상","prompt":"외부 이용자가 교내 온라인 토론방에 들어와 도배한 일이 있었다. 가입·게시·신고 단계에서 재발 예방 조치를 각각 한 가지 제시하시오.","answer":"가입 단계에서는 학교 인증이나 초대 승인을 적용한다. 게시 단계에서는 짧은 시간에 올릴 수 있는 글 수를 제한한다. 신고 단계에서는 이용자가 쉽게 찾는 신고 버튼과 담당자 전달 절차를 마련한다.","rubric":"가입자 범위 통제 1점 / 게시 빈도 제한 등 게시 단계 통제 1점 / 찾기 쉬운 신고와 전달 경로 1점"},
+{"id":52,"section":"practical","category":"역기능 예방 및 대응 기술 활용과 교육 · 사전 대응","type":"S","level":"상","prompt":"모의 피싱 훈련의 목표가 ‘수강생이 실제 상황에서 확인 경로를 선택한다’이다. 위험을 낮추는 실습 조건 한 가지와 평가할 행동 두 가지를 쓰시오.","answer":"가상 계정과 실제 정보가 입력되지 않는 실습용 화면을 쓴다. 수강생이 메시지 속 링크 대신 알려진 공식 채널로 확인하는지, 의심 메시지를 지정된 경로에 신고하는지 평가한다.","rubric":"실제 인증정보를 수집하지 않는 가상 환경 1점 / 별도로 확보한 공식 경로로 확인 1점 / 지정된 곳에 신고 1점"},
+{"id":53,"section":"practical","category":"역기능 예방 및 대응 기술 활용과 교육 · 사후 대응","type":"M","level":"상","prompt":"조롱 게시물이 계속 공유되고 있다. 증거를 남기는 과정에서 재유포도 줄이고자 한다. 적절한 대응은?","options":["게시물 주소·시각·필요한 화면을 제한된 곳에 보존하고, 공식 신고와 노출 제한을 진행한다.","학급 채팅방에 전체 화면을 올려 목격자 반응을 모은 뒤 신고한다.","재게시 여부가 모두 확인될 때까지 최초 게시물을 그대로 두고 신고를 미룬다.","게시물을 지운 뒤 학생들의 기억에 의존해 게시 시각과 공유 경로를 재구성한다."],"key":0,"explanation":"처리에 필요한 기록을 제한적으로 보존하면서 추가 노출을 줄일 수 있다. 증거를 학급 전체에 공개하면 확산될 수 있다."},
+{"id":54,"section":"practical","category":"역기능 예방 및 대응 기술 활용과 교육 · 사후 대응","type":"M","level":"상","prompt":"괴롭힘 게시물의 원문은 내려갔지만 피해 학생에게 재게시 링크와 조롱 메시지가 계속 온다. 후속 지원으로 적절한 것은?","options":["재게시와 접촉 경로를 다시 확인해 추가 노출을 줄이고, 학생과 안전 계획 및 후속 확인 시점을 합의한다.","재발 예방을 위해 학급에 최초 사건의 구체적 내용과 피해 학생의 이름을 공개한다.","학생의 심리 부담을 줄이기 위해 재게시 조사와 지원은 학생의 등교가 정상화될 때까지 미룬다.","원문의 삭제를 사안 종료 기준으로 삼고, 재게시 링크는 학생이 개인적으로 차단하게 한다."],"key":0,"explanation":"원글 삭제 후에도 피해가 이어질 수 있다. 재노출 대응과 학생의 안전·지원 점검을 함께 계획해야 한다."},
+{"id":55,"section":"practical","category":"역기능 예방 및 대응 기술 활용과 교육 · 사후 대응","type":"S","level":"상","prompt":"피해 학생은 ‘담임이 말하면 반 전체에 알려질까 무섭다’고 했다. 현재 공개 글이 확산 중이다. 학생에게 설명할 정보 공유 범위, 증거 처리, 노출 대응을 각각 한 가지 쓰시오.","answer":"조치에 필요한 담당자와 공유할 정보의 범위를 설명한다. 필요한 주소와 시각·화면을 접근 제한된 곳에 남긴다. 플랫폼 및 학교의 정해진 경로로 신고해 공개 노출을 줄인다.","rubric":"공유 대상과 정보의 범위 최소화 1점 / 증거의 제한 보존 1점 / 신고·숨김·삭제 요청 등 신속한 확산 억제 1점"},
+{"id":56,"section":"practical","category":"역기능 예방 및 대응 기술 활용과 교육 · 사후 대응","type":"S","level":"상","prompt":"원문을 삭제한 후 2주 동안 조치의 효과를 판단한다. 피해 학생에게 모니터링 책임을 떠넘기지 않는 점검 방법과 확인 지표 두 가지를 쓰시오.","answer":"담당자가 재게시를 확인하고 학생이 동의한 때에 비공개로 상태를 묻는다. 재게시나 재접촉 발생 여부와 학생이 느끼는 안전감 또는 일상 회복 정도를 살핀다.","rubric":"담당자 중심의 제한적 모니터링과 비공개 확인 1점 / 재게시·재접촉 확인 지표 1점 / 안전감·일상 회복 등 학생 지원 지표 1점"},
+{"id":57,"section":"practical","category":"정보보호 기술 활용과 교육 · 개인정보 침해 대응","type":"M","level":"상","prompt":"신청자 명단 파일의 공유 범위가 ‘링크가 있는 모든 사람’이었다. 열람 기록이 일부만 남아 있다. 담당자의 초동조치로 가장 적절한 것은?","options":["공개 접근을 차단하고, 공유 설정·접근 기록을 보존한 뒤 담당자에게 보고하여 영향 범위를 확인한다.","열람자가 확정될 때까지 링크를 유지하고 외부에서 접속 가능한지 반복 시험한다.","접근 기록이 부족하므로 확인 가능한 피해가 없다고 정리하고 공개 링크만 바꾼다.","공개 권한을 해제한 뒤 기록을 삭제하고, 파일을 새로 올려 접근 상태를 초기화한다."],"key":0,"explanation":"노출을 막는 조치와 조사 기록 보존을 함께 수행해야 한다. 일부 기록만으로 열람이 없었다고 단정할 수 없다."},
+{"id":58,"section":"practical","category":"정보보호 기술 활용과 교육 · 개인정보 침해 대응","type":"S","level":"상","prompt":"수강생의 이메일과 전화번호가 든 파일을 잘못된 외부 주소로 보냈다. 첨부는 파일 자체이며 공유 링크가 아니다. 담당자의 초동조치를 세 가지 쓰시오.","answer":"오발송 사실을 즉시 담당자에게 보고한다. 수신자에게 열람·전달 중지와 삭제를 요청하고 회신을 남긴다. 발송 시각과 항목·인원·수신처를 기록해 후속 대응에 활용한다.","rubric":"기관의 개인정보·사고 담당자 보고 1점 / 수신자에게 이용 중지와 삭제 요청 1점 / 시각·수신처·노출 범위 등 사실 기록 1점"},
+{"id":59,"section":"practical","category":"정보보호 기술 활용과 교육 · 개인정보 침해 대응","type":"S","level":"상","prompt":"수강생이 강사 공유 폴더에 올라간 신청서 사본을 지워 달라고 했다. 폴더 안에 여러 복사본이 있고 일부 원본은 보존 여부를 확인해야 한다. 처리 계획을 세 단계로 쓰시오.","answer":"신청서가 저장된 위치와 접근 권한을 파악한다. 담당자와 보존 근거 및 범위를 확인해 불필요한 사본을 삭제하고 보존 대상의 접근을 제한한다. 요청자에게 처리 결과와 남은 기록의 보존 조건을 알린다.","rubric":"저장 위치와 사본·권한 파악 1점 / 보존 필요성에 따라 삭제 또는 접근 제한 1점 / 처리 결과 안내 1점"},
+{"id":60,"section":"practical","category":"정보보호 기술 활용과 교육 · 해킹과 악성코드 유포 대응","type":"M","level":"상","prompt":"공유 드라이브에서 여러 파일이 연속으로 암호화되는 현상을 확인했고, 한 교실 PC에서 수상한 파일이 실행됐다는 신고를 받았다. 현장 담당자의 초동 대응으로 적절한 것은?","options":["새 감염의 증거를 확보하려고 의심 파일을 다른 교실 PC에서 열어 같은 현상이 발생하는지 확인한다.","의심 PC의 네트워크 연결을 차단하고, 보안 담당자에게 알려 영향 범위와 추가 격리를 조율한다.","의심 PC에서 복호화 도구를 먼저 내려받아 실행하고, 복구가 실패하면 연결을 차단한다.","의심 PC를 계속 연결한 상태로 두고, 암호화된 파일을 백업 폴더에 먼저 복사한다."],"key":1,"explanation":"진행 중인 확산을 줄이려면 영향 시스템을 신속히 격리하고, 기관 절차에 따라 담당자와 대응을 조율한다."},
+{"id":61,"section":"practical","category":"정보보호 기술 활용과 교육 · 해킹과 악성코드 유포 대응","type":"S","level":"상","prompt":"강사가 가짜 로그인 화면에 기관 계정의 비밀번호를 입력했다. 현재까지 이상 징후는 보이지 않는다. 안전한 기기와 공식 경로를 이용해 취할 조치를 세 가지 쓰시오.","answer":"기관 보안 담당자에게 피싱 사실을 보고한다. 공식 계정 관리 화면에서 비밀번호를 재설정한다. 기존 세션이나 토큰을 종료하고 최근 활동·권한 변경을 점검한다.","rubric":"보안 담당자에게 신고 1점 / 안전한 기기에서 공식 경로로 비밀번호 변경 1점 / 세션 종료 또는 계정 활동·연결 권한 점검 1점"},
+{"id":62,"section":"practical","category":"정보보호 기술 활용과 교육 · 해킹과 악성코드 유포 대응","type":"S","level":"상","prompt":"관리자들이 비밀번호와 일회용 문자 코드를 쓴다. 실시간 가짜 로그인 사이트가 두 값을 전달받아 실제 서비스에 즉시 입력했다. 더 강한 인증 방식 한 가지, 그 이유, 함께 유지할 운영 통제 한 가지를 쓰시오.","answer":"FIDO2 보안 키나 패스키 등 피싱 저항성 인증을 적용한다. 정상 서비스 도메인에 결합된 인증이므로 가짜 사이트가 같은 방식으로 인증값을 중계하기 어렵다. 계정 복구 과정에도 별도 확인 절차를 적용한다.","rubric":"FIDO2 보안 키·패스키 등 피싱 저항성 인증 1점 / 정상 서비스 도메인에 결합된 인증 근거 1점 / 강화된 계정 복구·이상 로그인 모니터링 등 보완 통제 1점"},
+{"id":63,"section":"practical","category":"교육 및 상담 실무 · 인터넷 윤리 교육","type":"M","level":"중상","prompt":"‘정보를 검증하고 전달 여부를 결정한다’는 수업에서 평가 공정성과 목표 달성을 함께 보려 한다. 가장 적절한 평가 기준은?","options":["찾은 게시물의 총개수, 검색 속도, 발표 슬라이드 수를 합산한다.","검증 앱 활용 횟수와 자료의 시각적 완성도를 공통 기준으로 채점한다.","교사의 공유 여부 결론과 일치하는지를 기준으로 하고, 근거는 동점일 때만 본다.","출처의 독립성 확인, 근거 비교, 공유 결정의 타당성을 공통 루브릭으로 채점한다."],"key":3,"explanation":"목표에 맞는 평가는 검증 과정과 판단의 근거를 살핀다. 검색량이나 화면 완성도는 해당 수행을 직접 보여주기 어렵다."},
+{"id":64,"section":"practical","category":"교육 및 상담 실무 · 인터넷 윤리 교육","type":"S","level":"상","prompt":"중학생 대상 20분 수업에서 ‘재공유 전 피해 위험을 따져 대안을 선택한다’를 가르친다. 학습 목표를 관찰 가능한 행동으로 한 문장 쓰고, 핵심 활동과 평가 과제를 각각 한 가지 제시하시오.","answer":"학생은 처음 보는 사례에서 피해 위험 한 가지를 근거로 재공유 여부와 대안을 제시한다. 수업에서는 소그룹이 가상 채팅 사례의 위험과 대안을 비교한다. 마지막에는 새 사례에 대한 개인 판단을 퇴실표로 받는다.","rubric":"관찰 가능한 판단·근거 목표 1점 / 사례 비교와 대안 탐색 활동 1점 / 새로운 사례의 개인 수행 평가 1점"},
+{"id":65,"section":"practical","category":"교육 및 상담 실무 · 인터넷 윤리 교육","type":"S","level":"상","prompt":"실습 후 학생들이 ‘검색 결과 1위는 가장 정확하다’고 답했다. 오개념을 드러낼 새 자료, 이를 교정할 활동, 이해를 확인할 평가를 각각 쓰시오.","answer":"서로 다른 검색 결과에서 광고·개인 글·공식 안내가 다른 순서로 나타나는 사례를 제시한다. 학생이 순위와 별개로 작성 주체, 날짜, 근거를 비교하게 한다. 새 검색 화면에서 신뢰할 근거를 골라 이유를 설명하게 한다.","rubric":"순위와 신뢰성이 어긋나는 사례 1점 / 출처의 신뢰도 비교 활동 1점 / 새 사례에서 근거를 설명하는 평가 1점"},
+{"id":66,"section":"practical","category":"교육 및 상담 실무 · 인터넷 윤리 생활지도와 상담","type":"M","level":"상","prompt":"온라인 조롱 사건 이후 보호자가 ‘상대 학생과 지금 당장 만나 사과받자’고 요청했다. 피해 학생은 아직 대면이 두렵다고 말한다. 상담자의 대응으로 적절한 것은?","options":["학생의 안전과 의사를 확인하고, 대면 여부와 별개로 보호·지원 절차를 진행하며 후속 선택지를 안내한다.","학생이 대면을 원하지 않으면 관계 회복 의사가 없는 것으로 보고 상담을 마친다.","재발 방지를 위해 양쪽을 같은 방에 먼저 불러 각각의 기억을 대조한다.","보호자의 요청을 우선해 사과 자리를 마련하고, 학생에게는 참석 방법만 고르게 한다."],"key":0,"explanation":"피해 학생의 안전과 의사에 근거해 절차를 정한다. 대면 여부를 정하기 전에도 보호와 지원을 시작할 수 있다."},
+{"id":67,"section":"practical","category":"교육 및 상담 실무 · 인터넷 윤리 생활지도와 상담","type":"S","level":"상","prompt":"학생이 ‘게임을 그만두려고 해도 친구들이 접속을 요구해 자꾸 늦게 자요’라고 말했다. 첫 상담에서 사용할 반영 응답, 기능 확인 질문, 협의할 행동 목표를 각각 하나 쓰시오.","answer":"‘친구 관계를 놓칠까 걱정돼 접속을 끊기 어렵구나’라고 반영한다. ‘늦게 잔 다음 날 수업이나 생활에 어떤 변화가 있었니?’라고 묻는다. 학생과 평일 종료 시각과 친구에게 알려줄 문장을 정하고 일주일 뒤 점검한다.","rubric":"감정 또는 갈등의 반영 1점 / 수면·학업 등 일상 기능의 확인 질문 1점 / 함께 정한 구체적 행동 목표와 점검 1점"},
+{"id":68,"section":"practical","category":"교육 및 상담 실무 · 인터넷 윤리 생활지도와 상담","type":"S","level":"상","prompt":"학급 채팅방에서 소외된 학생이 ‘누가 알면 더 괴롭힐 거예요’라고 말했다. 안전 중심 상담의 첫 대화와 기록 및 후속 지원의 원칙을 세 가지 쓰시오.","answer":"걱정을 인정하고 현재 위협과 안전을 비공개로 확인한다. 확인된 사실과 학생의 말을 구분해 접근 제한된 기록에 남긴다. 필요한 보호 절차와 공유 범위를 설명하고, 담당자와 후속 확인 일정을 정한다.","rubric":"감정 인정과 현재 위험·안전 확인 1점 / 사실·진술 구분과 제한 기록 1점 / 필요한 정보 공유와 후속 보호 계획 1점"}
+];
+const letters = ['①','②','③','④'];
+const responses = new Map();
+const revealed = new Set();
+const scope = document.querySelector('#scope');
+const card = document.querySelector('#card');
+const map = document.querySelector('#map');
+const progress = document.querySelector('#progress');
+const progressLabel = document.querySelector('#progress-label');
+let active = 1;
+let showingResults = false;
+const selected = () => bank.filter(q => scope.value === 'all' || q.section === scope.value);
+const current = () => bank[active-1];
+const hasAnswer = q => String(responses.get(q.id) ?? '').trim().length > 0;
+const isCorrect = q => responses.get(q.id) === q.key;
+const sectionLabel = q => q.section === 'theory' ? '이론' : '실무';
+const typeLabel = q => q.type === 'M' ? '4지선다 · 1점' : '주관식 · 3점';
+const answerText = q => q.type === 'M' ? `${letters[q.key]} ${q.options[q.key]}` : q.answer;
+const escapeHtml = s => String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const e = escapeHtml;
+function syncProgress() {
+  const questions = selected();
+  const answered = questions.filter(hasAnswer).length;
+  progress.max = questions.length;
+  progress.value = answered;
+  progressLabel.textContent = `작성 ${answered} / ${questions.length}문항 · 주관식은 모범답안과 기준을 보고 직접 채점합니다.`;
+  for (const button of map.querySelectorAll('button')) {
+    button.classList.toggle('done', hasAnswer(bank[Number(button.dataset.id)-1]));
+  }
+}
+function showMap() {
+  map.innerHTML = selected().map(q => `<button type="button" data-id="${q.id}" aria-label="${q.id}번 문항"${!showingResults && q.id === active ? ' aria-current="true"' : ''}>${q.id}</button>`).join('');
+  syncProgress();
+}
+function feedback(q) {
+  if (q.type === 'M') {
+    const result = hasAnswer(q) ? (isCorrect(q) ? '<strong class="good">정답입니다.</strong>' : '<strong class="bad">오답입니다.</strong>') : '<strong>미응답</strong>';
+    return `${result}<p><b>정답</b> ${e(answerText(q))}</p><p><b>해설</b> ${e(q.explanation)}</p>`;
+  }
+  return `<p><b>모범답안</b> ${e(q.answer)}</p><p><b>채점 기준</b> ${e(q.rubric)}</p>`;
+}
+function showQuestion(focus = false) {
+  showingResults = false;
+  const q = current();
+  const questions = selected();
+  const at = questions.indexOf(q);
+  const open = revealed.has(q.id);
+  const answer = responses.get(q.id);
+  const input = q.type === 'M'
+    ? `<fieldset class="choices"><legend class="sr">정답 선택</legend>${q.options.map((option,i) => {
+        const status = open ? (i === q.key ? ' right' : (answer === i ? ' wrong' : '')) : '';
+        return `<label class="choice${status}"><input type="radio" name="answer" value="${i}"${answer === i ? ' checked' : ''}><b>${letters[i]}</b><span>${e(option)}</span></label>`;
+      }).join('')}</fieldset>`
+    : `<label for="response" class="sr">주관식 답안</label><textarea id="response" class="response" placeholder="문제에서 요구한 요소를 생각하며 답안을 작성하세요.">${e(answer ?? '')}</textarea>`;
+  card.innerHTML = `<p class="tags">${sectionLabel(q)} · ${e(q.category)} · ${q.level} · ${typeLabel(q)}</p>
+    <h2 tabindex="-1" id="question-title"><span class="num">${q.id}.</span> ${e(q.prompt)}</h2>${input}
+    <div class="actions"><button type="button" data-action="previous"${at === 0 ? ' disabled' : ''}>이전</button>
+    <button type="button" data-action="reveal" class="primary" aria-expanded="${open}" aria-controls="feedback">${open ? '해설 숨기기' : (q.type === 'M' ? '정답·해설 보기' : '모범답안 보기')}</button>
+    <button type="button" data-action="next" class="next">${at === questions.length-1 ? '채점 결과' : '다음'}</button></div>
+    <div class="feedback" id="feedback"${open ? '' : ' hidden'}>${open ? feedback(q) : ''}</div>`;
+  showMap();
+  if (focus) card.querySelector('h2').focus();
+}
+function showReport() {
+  showingResults = true;
+  const questions = selected();
+  const choices = questions.filter(q => q.type === 'M');
+  const essays = questions.filter(q => q.type === 'S');
+  const correct = choices.filter(isCorrect).length;
+  card.innerHTML = `<h2 tabindex="-1">채점 결과</h2><div class="results-grid">
+    <div class="metric">객관식 점수<strong>${correct} / ${choices.length}점</strong></div>
+    <div class="metric">객관식 미응답<strong>${choices.filter(q => !hasAnswer(q)).length}문항</strong></div>
+    <div class="metric">주관식 작성<strong>${essays.filter(hasAnswer).length} / ${essays.length}문항</strong></div></div>
+    <p>아래에서 문항을 열어 작성한 답과 해설을 비교할 수 있습니다.${essays.length ? ` 주관식은 문항당 3점이며, 선택한 범위의 만점은 ${choices.length + essays.length*3}점입니다.` : ''}</p>
+    ${questions.map(q => {
+      const response = responses.get(q.id);
+      const label = !hasAnswer(q) ? '미응답' : (q.type === 'S' ? '자가 채점' : (isCorrect(q) ? '정답' : '오답'));
+      const display = hasAnswer(q) ? (q.type === 'M' ? `${letters[response]} ${q.options[response]}` : response) : '미응답';
+      return `<details class="review"><summary>${q.id}번 · ${label} · ${e(q.prompt)}</summary><p><b>내 답안</b> ${e(display)}</p><div class="feedback">${feedback(q)}</div></details>`;
+    }).join('')}`;
+  showMap();
+  card.querySelector('h2').focus();
+}
+function printPage(key) {
+  const questions = selected();
+  const range = scope.options[scope.selectedIndex].text;
+  let lastCategory = '';
+  const items = questions.map(q => {
+    const heading = q.category === lastCategory ? '' : `<h2>${sectionLabel(q)} · ${e(q.category)}</h2>`;
+    lastCategory = q.category;
+    const body = key
+      ? (q.type === 'M' ? `<p><b>정답</b> ${e(answerText(q))}</p><p><b>해설</b> ${e(q.explanation)}</p>`
+         : `<p><b>모범답안</b> ${e(q.answer)}</p><p><b>채점 기준</b> ${e(q.rubric)}</p>`)
+      : (q.type === 'M' ? `<ol>${q.options.map(option => `<li>${e(option)}</li>`).join('')}</ol>`
+         : '<div class="line"></div><div class="line"></div><div class="line"></div>');
+    return `${heading}<article class="print-item"><p><b>${q.id}.</b> ${e(q.prompt)}</p>${body}</article>`;
+  }).join('');
+  document.querySelector('#print-sheet').innerHTML = `<h1>인터넷 윤리 지도사 모의고사 ${key ? '정답 및 해설' : '문제지'}</h1>
+    <p class="print-meta">${e(range)} · 중상~상 · 객관식 1점 / 주관식 3점</p>${items}`;
+  window.print();
+}
+scope.addEventListener('change', () => {
+  if (!selected().some(q => q.id === active)) active = selected()[0].id;
+  showQuestion(true);
+});
+map.addEventListener('click', event => {
+  const button = event.target.closest('button[data-id]');
+  if (!button) return;
+  active = Number(button.dataset.id);
+  showQuestion(true);
+});
+card.addEventListener('change', event => {
+  if (event.target.name !== 'answer') return;
+  responses.set(active, Number(event.target.value));
+  if (revealed.has(active)) {
+    const value = event.target.value;
+    showQuestion();
+    card.querySelector(`input[value="${value}"]`).focus({preventScroll:true});
+  } else {
+    syncProgress();
+  }
+});
+card.addEventListener('input', event => {
+  if (event.target.id !== 'response') return;
+  responses.set(active, event.target.value);
+  syncProgress();
+});
+card.addEventListener('click', event => {
+  const action = event.target.closest('button')?.dataset.action;
+  if (!action) return;
+  const questions = selected();
+  const at = questions.indexOf(current());
+  if (action === 'reveal') {
+    if (revealed.has(active)) revealed.delete(active);
+    else revealed.add(active);
+    showQuestion();
+    card.querySelector('[data-action="reveal"]').focus({preventScroll:true});
+  } else if (action === 'next' && at === questions.length-1) {
+    showReport();
+  } else {
+    active = questions[at + (action === 'next' ? 1 : -1)].id;
+    showQuestion(true);
+  }
+});
+document.querySelector('#report').addEventListener('click', showReport);
+document.querySelector('#print-quiz').addEventListener('click', () => printPage(false));
+document.querySelector('#print-key').addEventListener('click', () => printPage(true));
+showQuestion();
+</script>
+</body>
+</html>
