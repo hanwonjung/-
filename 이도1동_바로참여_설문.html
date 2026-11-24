@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>이도1동 친구들 설문 바로 참여</title>
+<style>
+:root{--navy:#173b66;--blue:#2868c7;--bg:#f3f7fc;--ink:#1d2939;--muted:#667085;--line:#e4eaf2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 18px 48px}.hero{background:linear-gradient(135deg,#1d4f91,#418de3);color:white;border-radius:24px;padding:30px 26px;box-shadow:0 12px 30px #173b6620}.tag{font-size:13px;opacity:.85;font-weight:700;letter-spacing:.04em}h1{font-size:clamp(25px,5vw,36px);line-height:1.25;margin:10px 0} .hero p{margin:0;color:#eaf3ff;line-height:1.6}.action{display:block;margin-top:22px;text-align:center;background:white;color:var(--navy);font-weight:800;text-decoration:none;padding:16px;border-radius:14px;font-size:18px}.note{font-size:13px!important;margin-top:10px!important}
+section{margin-top:22px;background:white;border-radius:20px;padding:22px;box-shadow:0 5px 18px #173b660b}h2{font-size:20px;margin:0 0 8px}.hint{margin:0 0 16px;color:var(--muted);font-size:14px;line-height:1.55}.tools{display:flex;gap:10px;margin-bottom:14px}.tools input{min-width:0;flex:1;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:16px}.tools button,.copy{border:0;border-radius:11px;background:#eaf2ff;color:#2057a2;font-weight:800;padding:11px 14px;cursor:pointer}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.item{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:14px;padding:12px;gap:8px}.num{font-size:12px;color:var(--muted);display:block}.code{font-size:20px;letter-spacing:.08em;font-weight:850;font-family:ui-monospace,monospace}.copy{flex:none}.status{min-height:22px;margin:12px 0 0;color:#16794b;font-weight:700;font-size:14px}.foot{color:var(--muted);text-align:center;font-size:12px;margin-top:18px}
+@media(max-width:450px){main{padding:16px 12px 32px}.hero{padding:24px 20px}section{padding:18px 14px}.grid{grid-template-columns:1fr}.tools button{padding-inline:10px}}
+</style></head><body><main>
+<header class="hero"><div class="tag">이도1동 친구들을 위한 참여 페이지</div><h1>코드 복사하고<br>설문에 바로 참여해요!</h1><p>내 번호의 참여 코드를 복사한 뒤 설문 사이트에 붙여 넣어 주세요.</p><a class="action" href="https://newsac.kosac.re.kr/public/survey" target="_blank" rel="noopener">설문 사이트 열기 ↗</a><p class="note">설문 사이트가 새 창으로 열립니다. 아래에서 내 번호를 찾아 코드를 복사하세요.</p></header>
+<section><h2>내 참여 코드 찾기</h2><p class="hint">이름 또는 번호를 확인하고 <b>코드 복사</b>를 누르세요.</p><div class="tools"><input id="search" type="search" inputmode="numeric" placeholder="이름 또는 번호 입력"><button id="all">전체 보기</button></div><div class="grid" id="grid"></div><p class="status" id="status" aria-live="polite"></p></section>
+<p class="foot">참여 코드가 맞는지 확인한 뒤 설문을 제출해 주세요.</p></main>
+<script>
+const codes=[['1','마*빈','AW0JOO'],['2','문*하','7GM3GZ'],['3','변*환','X2KUSV'],['4','오*연','ROE2IK'],['5','유*준','1SZXKT'],['6','조*우','MKJ8IJ'],['7','양*완','AP5L0J'],['8','최*규','0TYNL7'],['9','함*율','GWZGV1'],['10','김*혁','IZ5PHZ'],['11','박*비','MFY77L'],['12','양*환','K62888'],['13','김*준','A83JYV'],['14','박*원','CBONWK'],['15','변*남','EU9NCN'],['16','위*한','9PVORZ'],['17','유*성','X2BKCI'],['18','이*나','EF7CVL'],['19','조*우','I2UI7H']];
+const grid=document.querySelector('#grid'), status=document.querySelector('#status');
+function render(q=''){grid.innerHTML='';codes.filter(([n,name])=>!q||n.includes(q)||name.includes(q)).forEach(([n,name,c])=>{const el=document.createElement('div');el.className='item';el.innerHTML=`<div><span class="num">참여 번호 ${n} · ${name}</span><span class="code">${c}</span></div><button class="copy" type="button">코드 복사</button>`;el.querySelector('button').onclick=async()=>{try{await navigator.clipboard.writeText(c);status.textContent=`${n}번 코드 ${c}를 복사했어요. 설문 사이트에 붙여 넣으세요.`}catch{status.textContent=`코드 ${c}를 길게 눌러 복사해 주세요.`}};grid.append(el)});if(!grid.children.length)grid.innerHTML='<p>해당 번호를 찾을 수 없어요.</p>'}
+document.querySelector('#search').addEventListener('input',e=>{status.textContent='';render(e.target.value.trim())});document.querySelector('#all').onclick=()=>{document.querySelector('#search').value='';status.textContent='';render()};render();
+</script></body></html>
