@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f7fc">
+<meta name="description" content="학생별 설문 참여 코드를 확인하고 복사할 수 있습니다.">
+<title>제주동여자중학교 설문 참여</title>
+<style>
+:root{--ink:#17233d;--muted:#68758b;--blue:#315ee8;--line:#e5eaf2;--bg:#f5f7fc;--white:#fff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;padding:28px 16px 48px}main{max-width:900px;margin:auto}.top{background:linear-gradient(125deg,#233b88,#3b66e7);color:white;border-radius:24px;padding:clamp(24px,5vw,42px);box-shadow:0 16px 40px #243c831f}.eyebrow{font-size:.8rem;letter-spacing:.1em;font-weight:800;opacity:.8;margin:0 0 10px}h1{font-size:clamp(1.65rem,5vw,2.35rem);letter-spacing:-.04em;line-height:1.2;margin:0 0 10px}.lead{margin:0;line-height:1.6;opacity:.9}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.button{min-height:44px;padding:0 16px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font:inherit;font-size:.9rem;font-weight:750}.button.light{background:white;color:#243b87}.button.ghost{border:1px solid #ffffff70;color:white;background:#ffffff10}.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:24px 0 12px}.count{font-size:.9rem;color:var(--muted)}.search{width:min(100%,300px);height:44px;border:1px solid var(--line);background:white;border-radius:12px;padding:0 14px;font:inherit;outline:none}.search:focus{border-color:#87a2ff;box-shadow:0 0 0 3px #315ee81c}.table-wrap{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:white;box-shadow:0 10px 28px #263e710a}table{width:100%;border-collapse:collapse}th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line)}th{background:#f9faff;color:#69758b;font-size:.78rem;font-weight:750;letter-spacing:.04em}td{font-size:.94rem}tbody tr:last-child td{border-bottom:0}.num{width:72px;color:var(--muted);font-variant-numeric:tabular-nums}.name{font-weight:700}.code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:1rem;font-weight:800;letter-spacing:.08em}.copy{border:1px solid #dbe3f4;background:#f7f9ff;color:#2947a0;border-radius:9px;padding:8px 12px;font:inherit;font-size:.82rem;font-weight:750;cursor:pointer}.copy:hover{background:#eef2ff}.copy:focus-visible,.button:focus-visible,.search:focus-visible{outline:3px solid #9ab2ff;outline-offset:2px}.footer{color:var(--muted);font-size:.8rem;line-height:1.6;margin:14px 2px}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,16px);opacity:0;pointer-events:none;background:#17233d;color:white;padding:11px 16px;border-radius:999px;font-size:.88rem;transition:.2s;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:560px){body{padding:14px 10px 34px}.top{border-radius:20px}.bar{align-items:stretch;flex-direction:column}.search{width:100%}.table-wrap{border-radius:14px}th,td{padding:11px 9px}.num{width:44px}.copy{padding:8px 9px}.hide-small{display:none}.code{letter-spacing:.04em;font-size:.92rem}}@media(max-width:360px){th,td{padding:10px 6px}.copy{font-size:.75rem;padding:7px}.code{font-size:.84rem}}
+</style>
+</head>
+<body>
+<main>
+<header class="top">
+<p class="eyebrow">SURVEY · PARTICIPATION GUIDE</p>
+<h1>설문 참여 코드 안내</h1>
+<p class="lead">명단에서 자신의 이름을 찾아 참여 코드를 확인하세요.<br>코드 옆 복사 버튼을 누른 뒤 설문에 붙여넣으면 됩니다.</p>
+<div class="actions"><a class="button light" href="https://newsac.kosac.re.kr/public/survey" target="_blank" rel="noopener noreferrer">설문조사 사이트 열기 ↗</a><a class="button ghost" href="#roster">학생 코드 명단 보기 ↓</a></div>
+</header>
+<div class="bar" id="roster"><span class="count" id="count" aria-live="polite">전체 27명</span><input class="search" id="search" type="search" placeholder="이름 또는 번호 검색" aria-label="이름 또는 번호 검색"></div>
+<div class="table-wrap"><table><thead><tr><th class="num">번호</th><th>이름</th><th>참여 코드</th><th class="hide-small">복사</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="footer">이름은 개인정보 보호를 위해 일부 글자를 가려 표시했습니다. 코드를 복사해 설문조사 사이트의 참여 코드 입력란에 붙여넣으세요.</p>
+</main><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const students=[
+[1,"강*연","VTOWJS"],[2,"강*서","2ODFMV"],[3,"강*원","3RHPZV"],[4,"강*주","7QFQG9"],[5,"곽*","2X5KWW"],[6,"김*은","0D7BR8"],[7,"김*희","2DZ8VT"],[8,"김*윤","9V9VNG"],[9,"김*솔","MESOF6"],[10,"김*연","MYZ3AP"],[11,"김*율","0APLY0"],[12,"김*은","RPSD6X"],[13,"문*원","W2WEV1"],[14,"박*윤","5JB8DX"],[15,"박*서","RPCN38"],[16,"박*진","AINDP3"],[17,"부*정","Z4730A"],[18,"오*수","7F0O9E"],[19,"이*희","P8FDW8"],[20,"임*정","S26YWC"],[21,"조**솔","QC3RTL"],[22,"지*서","3Z5BUF"],[23,"채*지","6JN6QX"],[24,"최*빈","7AFTAG"],[25,"한*현","4DPCZZ"],[26,"현*은","OB2NDF"],[27,"현*연","WCJR15"]
+];
+const body=document.querySelector('#rows'),search=document.querySelector('#search'),count=document.querySelector('#count'),toast=document.querySelector('#toast');
+function render(){const q=search.value.trim().toLowerCase();const visible=students.filter(([n,name,code])=>String(n).includes(q)||name.toLowerCase().includes(q)||code.toLowerCase().includes(q));count.textContent=q?`검색 결과 ${visible.length}명`:`전체 ${students.length}명`;body.innerHTML=visible.map(([n,name,code])=>`<tr><td class="num">${n}</td><td class="name">${name}</td><td class="code">${code}</td><td class="hide-small"><button class="copy" type="button" data-code="${code}" aria-label="${n}번 ${name} 코드 복사">복사</button></td></tr>`).join('');}
+search.addEventListener('input',render);body.addEventListener('click',async e=>{const b=e.target.closest('[data-code]');if(!b)return;const value=b.dataset.code;try{await navigator.clipboard.writeText(value)}catch{const t=document.createElement('textarea');t.value=value;t.style.position='fixed';t.style.opacity='0';document.body.append(t);t.select();document.execCommand('copy');t.remove()}toast.textContent=`${value} 복사 완료`;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800)});render();
+</script>
+</body>
+</html>
